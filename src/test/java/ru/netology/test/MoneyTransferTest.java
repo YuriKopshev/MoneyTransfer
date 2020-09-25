@@ -49,7 +49,7 @@ class MoneyTransferTest {
         verificationPage.validVerify(verificationCode);
         val cardChoice = new CardChoicePage().secondCardSelect();
         val cardTransferPage = cardChoice.moneyTransferSecondToFirst(DataHelper.getTransferMoneyInfoSecondToFirst());
-        $("[data-test-id=\"0f3f5c2a-249e-4c3d-8287-09f7a039391d\"]").waitUntil(visible, 5000).shouldHave(tex);
+        $("[data-test-id=\"0f3f5c2a-249e-4c3d-8287-09f7a039391d\"]").waitUntil(visible, 5000).shouldHave(text(sumResult));
     }
 
 

@@ -32,11 +32,11 @@ public class DataHelper {
         private String sum;
         private String from;
     }
-    public static Transfer getTransferMoneyInfoFirstToSecond(){
+    public static Transfer getTransferMoneyInfoSecondToFirst(){
        return new Transfer("200","5559 0000 0000 0002");
     }
 
-    public static Transfer getTransferMoneyInfoSecondToFirst(){
+    public static Transfer getTransferMoneyInfoFirstToSecond(){
         return new Transfer("200","5559 0000 0000 0001");
     }
 }

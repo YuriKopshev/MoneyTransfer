@@ -17,14 +17,14 @@ public class CardTransferPage {
         amount.shouldBe(visible);
     }
 
-    public DashboardPage moneyTransferFirstToSecond(DataHelper.Transfer transfer){
+    public DashboardPage moneyTransferSecondToFirst(DataHelper.Transfer transfer){
         amount.setValue(transfer.getSum());
         fromField.setValue(transfer.getFrom());
         $$("[type='button']").find(exactText("Пополнить")).click();
         return new DashboardPage();
 
     }
-    public DashboardPage moneyTransferSecondToFirst(DataHelper.Transfer transfer){
+    public DashboardPage moneyTransferFirstToSecond(DataHelper.Transfer transfer){
         amount.setValue(transfer.getSum());
         fromField.setValue(transfer.getFrom());
         $$("[type='button']").find(exactText("Пополнить")).click();

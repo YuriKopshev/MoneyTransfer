@@ -27,17 +27,21 @@ public class DataHelper {
     }
 
 
-    @Value
-    public static class Transfer{
-        private String sum;
-        private String from;
-    }
-    public static Transfer getTransferMoneyInfoSecondToFirst(){
-       return new Transfer("200","5559 0000 0000 0002");
+      @Value
+    public static class CardInfo {
+          private String CardNumber;
+
+      }
+        public static CardInfo getFirstCardNumber() {
+            return new CardInfo("5559 0000 0000 0001");
+        }
+
+          public static CardInfo getSecondCardNumber() {
+              return new CardInfo("5559 0000 0000 0002");
+          }
     }
 
-    public static Transfer getTransferMoneyInfoFirstToSecond(){
-        return new Transfer("200","5559 0000 0000 0001");
-    }
-}
+
+
+
 

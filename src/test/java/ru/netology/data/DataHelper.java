@@ -5,7 +5,8 @@ import lombok.Data;
 import lombok.Value;
 
 public class DataHelper {
-    private DataHelper() {}
+    private DataHelper() {
+    }
 
     @Value
     public static class AuthInfo {
@@ -27,19 +28,23 @@ public class DataHelper {
     }
 
 
-      @Value
+    @Value
     public static class CardInfo {
-          private String CardNumber;
+        private String CardNumber;
 
-      }
-        public static CardInfo getFirstCardNumber() {
-            return new CardInfo("5559 0000 0000 0001");
-        }
 
-          public static CardInfo getSecondCardNumber() {
-              return new CardInfo("5559 0000 0000 0002");
-          }
     }
+
+    public static CardInfo getFirstCardNumber() {
+        return new CardInfo("5559 0000 0000 0001");
+    }
+
+    public static CardInfo getSecondCardNumber() {
+        return new CardInfo("5559 0000 0000 0002");
+    }
+
+
+}
 
 
 

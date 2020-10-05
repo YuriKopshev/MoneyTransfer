@@ -1,7 +1,6 @@
 package ru.netology.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+
 import lombok.Value;
 
 public class DataHelper {
@@ -27,19 +26,18 @@ public class DataHelper {
         return new VerificationCode("12345");
     }
 
-
     @Value
     public static class CardInfo {
         private String CardNumber;
-
-
     }
 
     public static CardInfo getFirstCardNumber() {
+
         return new CardInfo("5559 0000 0000 0001");
     }
 
     public static CardInfo getSecondCardNumber() {
+
         return new CardInfo("5559 0000 0000 0002");
     }
 
